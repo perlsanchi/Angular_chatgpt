@@ -47,3 +47,8 @@ Submit
 	
 
 Responds to form submission
+
+
+
+Property binding - Sets a property
+event binding - responds to an event

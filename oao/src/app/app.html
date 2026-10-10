@@ -1,6 +1,14 @@
 
 <app-header></app-header>
+<label for="customerName">Enter your name:</label>
 
+<input
+  id="customerName"
+  type="text"
+  [(ngModel)]="customerName"
+/>
+
+<p>Welcome, {{ customerName }}!</p>
 <h1>Spicy Maasa</h1>
 
 <h2>Welcome {{ name() }}</h2>
