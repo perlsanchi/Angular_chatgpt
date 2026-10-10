@@ -66,6 +66,12 @@ export class App {
   changeName() {
     this.name.set('Natasha');
   }
+
+  message = '';
+
+onFishSelected(fishName: string) {
+  this.message = fishName + ' selected!';
+}
 }
 
 /*

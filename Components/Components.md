@@ -107,3 +107,12 @@ The <app-root> tag matches the component's selector:
 ng generate component header  to create new header  
 
 A child component is a component that is used inside another component's template.
+
+
+Parent → Child: pass data using input().
+
+Child → Parent: send events using output().
+
+Parent ↔ Child: combine inputs and outputs for two-way communication.
+
+Unrelated components: share data through a service.

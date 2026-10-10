@@ -3,8 +3,11 @@
 <label for="customerName">Enter your name:</label>
 <app-fish-list
   [fishName]="'Surmai'"
-  [price]="400">
+  [price]="400"
+  (buyFish)="onFishSelected($event)">
 </app-fish-list>
+
+<p>{{ message }}</p>
 
 <input
   id="customerName"

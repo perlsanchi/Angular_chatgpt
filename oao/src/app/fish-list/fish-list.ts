@@ -1,4 +1,4 @@
-import { Component,input } from '@angular/core';
+import { Component,input,output } from '@angular/core';
 
 @Component({
   selector: 'app-fish-list',
@@ -9,4 +9,10 @@ import { Component,input } from '@angular/core';
 export class FishList {
   fishName = input('Pomfret');
   price = input(500);
+
+  buyFish = output<string>();
+
+  buyNow() {
+    this.buyFish.emit(this.fishName());
+  }
 }
