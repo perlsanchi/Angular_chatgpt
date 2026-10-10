@@ -3,18 +3,20 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from './header/header';
 
 @Component({
-  imports: [RouterOutlet,Header],
+  imports: [RouterOutlet, Header],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
 })
 export class App {
   protected readonly name = signal('Customer');
-  description = 'Authenticated fish';
-  price = 300
-  quantity = 2.5
-}
 
+  description = 'Authenticated fish';
+  price = 300;
+  quantity = 2.5;
+
+  isDisabled = true;
+}
 
 /*
 In Angular, a Signal is a way to store a value that Angular can track for changes and automatically update the UI when that value changes.
