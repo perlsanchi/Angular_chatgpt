@@ -1,0 +1,3 @@
+In Angular, a signal is a container that stores a value and notifies Angular when that value changes. Angular can then update the parts of your HTML that depend on that value.
+protected readonly name = signal('Customer');
+

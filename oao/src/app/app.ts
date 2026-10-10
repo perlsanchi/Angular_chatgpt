@@ -23,6 +23,10 @@ export class App {
   }
 
   customerName = 'Customer';
+
+  changeName() {
+    this.name.set('Natasha');
+  }
 }
 
 /*
