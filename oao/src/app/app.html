@@ -15,6 +15,17 @@
   [(ngModel)]="customerName"
 />
 
+<h2>{{ fishName }}</h2>
+
+<p>Price per kg: ₹{{ price }}</p>
+
+<p>Quantity: {{ quantity }} kg</p>
+
+<p>Total bill: ₹{{ price * quantity }}</p>
+
+<p>
+  {{ dis > 1000 ? '10% discount available' : 'No discount' }}
+</p>
 <p>Welcome, {{ customerName }}!</p>
 <button (click)="changeName()">Change Name</button>
 <h1>Spicy Maasa</h1>

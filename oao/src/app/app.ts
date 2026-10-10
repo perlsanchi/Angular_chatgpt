@@ -52,9 +52,10 @@ export class App {
   protected readonly name = signal('Customer');
 
   description = 'Authenticated fish';
+  fishName = 'Paplet';
   price = 300;
   quantity = 2.5;
-
+  dis = 1200;
   isDisabled = true;
 
   signUp() {

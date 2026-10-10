@@ -1,0 +1,60 @@
+@Input() allows a parent component to pass data to a child component.
+
+In modern Angular, input() is the newer API, but @Input() is still widely used and important to understand for existing projects and interviews.
+
+Parent: App
+
+Passes Surmai and 400
+
+Child: FishList
+
+Surmai
+
+Price: ₹400
+
+The parent supplies values, and the child receives them through @Input() properties.
+
+import { Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-fish-list',
+  imports: [],
+  templateUrl: './fish-list.html',
+  styleUrl: './fish-list.css'
+})
+export class FishList {
+  @Input() fishName: string = 'Pomfret';
+  @Input() price: number = 500;
+}
+
+Input is imported from @angular/core.
+
+@Input() marks a class property as a value that can be supplied by a parent.
+
+fishName accepts a string.
+
+price accepts a number.
+
+The default values are used when the parent doesn't provide a value.
+
+What if the parent changes the value?
+
+Suppose the parent changes its template to:
+
+<app-fish-list
+  [fishName]="'Pomfret'"
+  [price]="600">
+</app-fish-list>
+
+The child receives the updated values, and Angular updates the displayed content.
+
+The child should generally treat input values as data provided by the parent, rather than directly modifying them.
+
+
+@Output() declares an event that the parent can listen to.
+
+EventEmitter<string> creates an event emitter whose payload is a string.
+
+buyNow() is called when the user clicks the button.
+
+this.buyFish.emit(this.fishName) sends the fish name to the parent.
