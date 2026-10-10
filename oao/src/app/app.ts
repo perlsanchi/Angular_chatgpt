@@ -16,9 +16,19 @@ export class App {
   quantity = 2.5;
 
   isDisabled = true;
+
+  signUp() {
+    alert('Welcome to our authenticated flavour house');
+  }
 }
 
 /*
+
+signUp() is a method (a function inside a class).
+
+alert() displays a popup message in the browser.
+
+Angular can call this method when an event occurs.
 In Angular, a Signal is a way to store a value that Angular can track for changes and automatically update the UI when that value changes.
 This is the TypeScript/logic part of the component. 
 
