@@ -15,6 +15,12 @@
   [(ngModel)]="customerName"
 />
 
+<input #fishNameInput placeholder="Enter fish name">
+
+<button (click)="showFish(fishNameInput.value)">
+  Show Fish
+</button>
+
 <h2>{{ fishName }}</h2>
 
 <p>Price per kg: ₹{{ price }}</p>

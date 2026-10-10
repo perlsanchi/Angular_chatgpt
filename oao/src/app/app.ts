@@ -73,6 +73,10 @@ export class App {
 onFishSelected(fishName: string) {
   this.message = fishName + ' selected!';
 }
+
+showFish(name: string) {
+    alert(name);
+  }
 }
 
 /*
