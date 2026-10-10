@@ -21,6 +21,13 @@
   Show Fish
 </button>
 
+
+<input #mobileInput placeholder="Enter mobile number">
+
+<button (click)="mobileInput.value = ''">
+  Clear
+</button>
+
 <h2>{{ fishName }}</h2>
 
 <p>Price per kg: ₹{{ price }}</p>
