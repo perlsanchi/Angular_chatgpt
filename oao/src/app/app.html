@@ -28,6 +28,33 @@
   Clear
 </button>
 
+@if (isAvailable) {
+  <p>Surmai is available!</p>
+} @else {
+  <p>Surmai is out of stock.</p>
+}
+
+<h2>Available Fish</h2>
+
+@for (fish of fishList; track fish) {
+  <p>{{ fish }}</p>
+}
+
+@switch (orderStatus) {
+  @case ('placed') {
+    <p>Your order has been placed.</p>
+  }
+  @case ('shipped') {
+    <p>Your fish order is on the way!</p>
+  }
+  @case ('delivered') {
+    <p>Your order has been delivered.</p>
+  }
+  @default {
+    <p>Unknown order status.</p>
+  }
+}
+
 <h2>{{ fishName }}</h2>
 
 <p>Price per kg: ₹{{ price }}</p>

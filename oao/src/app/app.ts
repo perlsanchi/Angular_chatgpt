@@ -77,6 +77,12 @@ onFishSelected(fishName: string) {
 showFish(name: string) {
     alert(name);
   }
+
+  isAvailable = true;
+
+  fishList = ['Surmai', 'Pomfret', 'Prawns'];
+
+  orderStatus = 'shipped';
 }
 
 /*
