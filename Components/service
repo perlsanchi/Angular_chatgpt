@@ -1,0 +1,6 @@
+cart we have created using
+ng generate service cart
+
+Both components can inject Cart and access its selectedFish signal. When one component adds a fish, the other can read the updated list.
+
+You can learn dependency injection and shared services after mastering parent–child communication.
