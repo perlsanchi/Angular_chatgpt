@@ -55,6 +55,20 @@
   }
 }
 
+<h2>Spicy Maasa Fish Catalogue</h2>
+
+@for (fish of fishlist; track fish.id) {
+  <div>
+    <h3>{{ fish.name }}</h3>
+    <p>Price: ₹{{ fish.price }}</p>
+    <p>Status: {{ fish.status }}</p>
+
+    @if (fish.description) {
+      <p>{{ fish.description }}</p>
+    }
+  </div>
+}
+
 <h2>{{ fishName }}</h2>
 
 <p>Price per kg: ₹{{ price }}</p>

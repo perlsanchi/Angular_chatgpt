@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from './header/header';
 import { FormsModule } from '@angular/forms';
 import { FishList } from './fish-list/fish-list';
+import { Fish } from './fish-model';
 
 /* This is standalone component 
 Can be imported directly into another component
@@ -83,6 +84,22 @@ showFish(name: string) {
   fishList = ['Surmai', 'Pomfret', 'Prawns'];
 
   orderStatus = 'shipped';
+
+  fishlist: Fish[] = [
+    {
+      id: 1,
+      name: 'Surmai',
+      price: 400,
+      status: 'Available',
+      description: 'Fresh sea fish'
+    },
+    {
+      id: 2,
+      name: 'Pomfret',
+      price: 600,
+      status: 'Out of stock'
+    }
+  ];
 }
 
 /*
