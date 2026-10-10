@@ -11,6 +11,8 @@ import { Header } from './header/header';
 export class App {
   protected readonly name = signal('Customer');
   description = 'Authenticated fish';
+  price = 300
+  quantity = 2.5
 }
 
 
