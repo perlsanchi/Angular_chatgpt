@@ -1,0 +1,24 @@
+
+h1 {
+  color: darkred;
+  text-align: center;
+}
+
+h2 {
+  color: darkblue;
+}
+
+p {
+  font-size: 18px;
+  color: #555555;
+}
+
+button {
+  background-color: darkred;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  margin-right: 8px;
+  cursor: pointer;
+}

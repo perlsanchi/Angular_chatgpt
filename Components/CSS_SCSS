@@ -1,0 +1,104 @@
+What are CSS and SCSS?
+
+CSS — controls how your webpage looks: colors, spacing, font sizes, borders, layouts, and more.
+
+SCSS — an enhanced syntax for CSS that supports features such as variables and nesting. It gets compiled into regular CSS for the browser.
+
+The line styleUrl: './app.css' tells Angular which CSS file to use for this component.
+
+h1 {
+  color: darkred;
+  text-align: center;
+}
+
+h1 — the selector; it targets all <h1> elements in this component's template.
+
+{ } — contains the styling rules.
+
+color — changes the text color.
+
+darkred — the value assigned to that property.
+
+text-align: center — centers the heading horizontally.
+
+
+background-color
+
+	
+
+Background color
+
+	
+
+lightblue
+
+font-size
+
+	
+
+Text size
+
+	
+
+18px
+
+padding
+
+	
+
+Space inside an element
+
+	
+
+10px
+
+margin
+
+	
+
+Space outside an element
+
+	
+
+10px
+
+border-radius
+
+	
+
+Rounded corners
+
+	
+
+8px
+
+border
+
+	
+
+Element outline
+
+	
+
+1px solid gray
+
+
+5. What is SCSS?
+
+SCSS lets you organize styles with additional features.
+button {
+  color: white;
+}
+
+button:hover {
+  background-color: black;
+}
+
+button {
+  color: white;
+
+  &:hover {
+    background-color: black;
+  }
+}
+Here, &:hover refers to the same button when the mouse is over it.
