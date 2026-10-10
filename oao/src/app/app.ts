@@ -3,6 +3,44 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from './header/header';
 import { FormsModule } from '@angular/forms';
 
+/* This is standalone component 
+Can be imported directly into another component
+
+Component metadata is the configuration you write inside @Component({...}) to tell Angular how
+ a component should work.
+
+ selector
+
+Defines the HTML tag used to display the component.
+
+Example: selector: 'app-root' → <app-root></app-root>
+
+templateUrl
+
+Specifies the external HTML template.
+
+Example: templateUrl: './app.html'
+
+styleUrl
+
+Specifies the external CSS stylesheet.
+
+Example: styleUrl: './app.css'
+
+imports
+
+Lists components, directives, and pipes available in a standalone component's template, along with applicable NgModules.
+
+Example: imports: [Header, FormsModule]
+
+A parent component is a component that contains or uses another component in its template. The component being used is called the child component.
+
+In your Spicy Maasa project:
+
+App is the parent component.
+
+Header is the child component.
+*/
 @Component({
   imports: [RouterOutlet, Header,FormsModule],
   selector: 'app-root',
