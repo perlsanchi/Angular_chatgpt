@@ -2,6 +2,7 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './header/header';
 import { FormsModule } from '@angular/forms';
+import { FishList } from './fish-list/fish-list';
 
 /* This is standalone component 
 Can be imported directly into another component
@@ -42,7 +43,7 @@ App is the parent component.
 Header is the child component.
 */
 @Component({
-  imports: [RouterOutlet, Header,FormsModule],
+  imports: [RouterOutlet, Header,FormsModule,FishList],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

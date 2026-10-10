@@ -104,4 +104,6 @@ In src/index.html, you’ll usually find:
 
 The <app-root> tag matches the component's selector:
 
-ng generate component header  to create new header
+ng generate component header  to create new header  
+
+A child component is a component that is used inside another component's template.
