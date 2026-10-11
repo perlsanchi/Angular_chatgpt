@@ -182,6 +182,18 @@ checkPrice(price: number): string {
 
 
 
+getFirstItem<T>(items: T[]): T | undefined {
+  return items[0];
+}
+
+fishnames: string[] = ['Surmai', 'Pomfret', 'Prawns'];
+
+prices: number[] = [400, 600, 300];
+
+firstFishName = this.getFirstItem(this.fishnames);
+
+firstPrice = this.getFirstItem(this.prices);
+
 }
 
 
