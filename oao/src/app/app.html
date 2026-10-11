@@ -55,6 +55,22 @@
   }
 }
 
+
+<h2>Fish Details</h2>
+
+<p>Name: {{ fish.name }}</p>
+<p>Price: ₹{{ fish.price }}</p>
+<p>Status: {{ fish.status }}</p>
+
+
+<p>Fish name: {{ getFishName() }}</p>
+
+<p>Updated price: ₹{{ fish.price }}</p>
+
+<button (click)="changeFishPrice()">
+  Update Price
+</button>
+
 <h2>Class Example</h2>
 
 <h3>{{ surmai.name }}</h3>

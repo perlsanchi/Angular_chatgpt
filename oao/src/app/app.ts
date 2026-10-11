@@ -104,6 +104,22 @@ showFish(name: string) {
   surmai = new FishProduct('Surmai', 400);
 
 pomfret = new FishProduct('Pomfret', 600);
+
+
+fish = {
+  name: 'Surmai',
+  price: 400,
+  status: 'Available'
+};
+
+
+getFishName(): string {
+  return this.fish.name;
+}
+
+changeFishPrice(): void {
+  this.fish.price = 450;
+}
 }
 
 /*
