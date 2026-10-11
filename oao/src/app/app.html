@@ -120,6 +120,15 @@
   Check Order
 </button>
 
+
+<h2>Order Status</h2>
+
+<p>Current status: {{ orderStatus }}</p>
+
+<button (click)="changeOrderStatus()">
+  Ship Order
+</button>
+
 <p>{{ checkPrice(300) }}</p>
 <p>{{ checkPrice(600) }}</p>
 

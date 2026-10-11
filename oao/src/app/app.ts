@@ -50,7 +50,22 @@ Header is the child component.
   templateUrl: './app.html',
 })
 export class App {
+
+
+  
   protected readonly name = signal('Customer');
+
+  orderStatus: 'placed' | 'pending' | 'shipped' | 'delivered' = 'placed';
+
+changeOrderStatus(): void {
+  
+  this.orderStatus = 'shipped';
+
+
+this.orderStatus = 'pending';
+this.orderStatus = 'shipped';
+this.orderStatus = 'delivered';
+}
 
   description = 'Authenticated fish';
   fishName = 'Paplet';
@@ -73,7 +88,10 @@ export class App {
 
 onFishSelected(fishName: string) {
   this.message = fishName + ' selected!';
+
+
 }
+
 
 showFish(name: string) {
     alert(name);
@@ -82,8 +100,6 @@ showFish(name: string) {
   isAvailable = true;
 
   fishList = ['Surmai', 'Pomfret', 'Prawns'];
-
-  orderStatus = 'shipped';
 
   fishlist: Fish[] = [
     {
@@ -163,6 +179,9 @@ checkPrice(price: number): string {
     return 'Premium';
   }
 }
+
+
+
 }
 
 
