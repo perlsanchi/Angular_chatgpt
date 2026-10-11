@@ -120,7 +120,26 @@ getFishName(): string {
 changeFishPrice(): void {
   this.fish.price = 450;
 }
+
+
+fishNames: string[] = ['Surmai', 'Pomfret', 'Prawns'];
+firstFish = this.fishNames[0];
+secondFish = this.fishNames[1];
+
+
+addFish(): void {
+  this.fishNames.push('Bombil');
 }
+
+removeLastFish(): void {
+  this.fishNames.pop();
+}
+
+getFishCount(): number {
+  return this.fishNames.length;
+}
+}
+
 
 /*
 

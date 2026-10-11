@@ -71,6 +71,22 @@
   Update Price
 </button>
 
+<p>First fish: {{ firstFish }}</p>
+<p>Second fish: {{ secondFish }}</p>
+
+
+<h2>Spicy Maasa Fish List</h2>
+
+@for (fish of fishNames; track fish) {
+  <p>{{ fish }}</p>
+}
+
+
+<p>Total fish: {{ fishNames.length }}</p>
+
+<button (click)="addFish()">Add Bombil</button>
+
+<button (click)="removeLastFish()">Remove Last Fish</button>
 <h2>Class Example</h2>
 
 <h3>{{ surmai.name }}</h3>
