@@ -138,6 +138,31 @@ removeLastFish(): void {
 getFishCount(): number {
   return this.fishNames.length;
 }
+
+greet(): string {
+  return 'Enjoyyyy';
+}
+
+
+calculateTotal(price: number, quantity: number): number {
+  return price * quantity;
+}
+
+
+storeMessage = 'Welcome!';
+
+changeMessage(): void {
+  this.storeMessage = 'Your fish order is ready!';
+}
+
+
+checkPrice(price: number): string {
+  if (price <= 400) {
+    return 'Affordable';
+  } else {
+    return 'Premium';
+  }
+}
 }
 
 
