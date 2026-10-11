@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from './header/header';
 import { FormsModule } from '@angular/forms';
 import { FishList } from './fish-list/fish-list';
-import { Fish } from './fish-model';
+import { Fish, FishProduct } from './fish-model';
 
 /* This is standalone component 
 Can be imported directly into another component
@@ -100,6 +100,10 @@ showFish(name: string) {
       status: 'Out of stock'
     }
   ];
+
+  surmai = new FishProduct('Surmai', 400);
+
+pomfret = new FishProduct('Pomfret', 600);
 }
 
 /*
