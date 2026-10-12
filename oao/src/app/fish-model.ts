@@ -38,3 +38,24 @@ interface ApiResponse<T> {
   success: boolean;
   message: string;
 }
+
+export enum Orderstatus {
+  Pending,
+  Shipped,
+  Delivered
+}
+
+/* By default, TypeScript assigns numeric values:
+
+Pending = 0
+
+Shipped = 1
+
+Delivered = 2
+
+you can use string values too
+export enum OrderStatus {
+  Pending = 'Pending',
+  Shipped = 'Shipped',
+  Delivered = 'Delivered'
+}*/

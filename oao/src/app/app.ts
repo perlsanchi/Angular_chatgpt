@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from './header/header';
 import { FormsModule } from '@angular/forms';
 import { FishList } from './fish-list/fish-list';
-import { Fish, FishProduct } from './fish-model';
+import { Fish, FishProduct,Orderstatus } from './fish-model';
 
 /* This is standalone component 
 Can be imported directly into another component
@@ -193,6 +193,13 @@ prices: number[] = [400, 600, 300];
 firstFishName = this.getFirstItem(this.fishnames);
 
 firstPrice = this.getFirstItem(this.prices);
+
+orderstatus = Orderstatus.Pending;
+
+changOrderStatus(): void {
+  this.orderstatus = Orderstatus.Shipped;
+}
+/* Initially before clicking the button it shows pending, on clicking it shows shipped */
 
 }
 
